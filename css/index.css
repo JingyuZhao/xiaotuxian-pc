@@ -1,0 +1,196 @@
+/* banner */
+.banner {
+    height: 500px;
+    background-color: #f5f5f5;
+}
+.banner .wrapper {
+    height: 500px;
+    background-color: aqua;
+    overflow: hidden;
+    position: relative;
+}
+.banner .bannerpic {
+    display: flex;
+}
+/* 侧导航 */
+.banner .subnav {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 240px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.42);
+}
+.banner .subnavlist li{
+    height: 50px;
+    display: flex;
+    line-height: 50px;
+    padding-left: 30px;
+    padding-right: 12px;
+    justify-content: space-between;
+    color: white;
+    cursor: pointer;
+}
+.banner .subnavlist li:hover {
+    background-color: #00be9a;
+}
+.banner .subnav .subnavlist li a {
+    color: white;
+    font-size: 14px;
+    margin-right: 5px;
+}
+.banner .subnav .subnavlist .classify {
+    font-size: 16px;
+    margin-right: 14px;
+}
+.banner .subnav .icon-xiangyoujiantou {
+    font-size: 12px;
+    color: white;
+}
+/* 圆点指示器 */
+.banner ol {
+    position: absolute;
+    right: 17px;
+    bottom: 17px;
+    display: flex;
+}
+.banner ol li {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    margin-right: 8px;
+    cursor: pointer;
+}
+.banner ol .banner_active {
+    background-color: rgba(255, 255, 255, 0.42);
+}
+.banner ol li:last-child {
+    margin-right: 0px;
+}
+.banner ol li i {
+    display: block;
+    font-style: none;
+    width: 14px;
+    height: 14px;
+    background-color: white;
+    border-radius: 50%;
+    margin-top: 4px;
+    margin-left: 4px;
+}
+/* 好物推荐 */
+.title{
+    height: 42px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.title .left {
+    display: flex;
+}
+.title .left h3 {
+    font-size: 30px;
+    margin-right: 35px;
+}
+.title .left p {
+    align-self: flex-end;
+    color: #A1A1A1;
+}
+.title .right .more{
+    color: #A1A1A1;
+    font-size: 16px;
+    line-height: 42px;
+}
+.icon-xiangyoujiantou {
+    color: #A1A1A1;
+}
+.content ul{
+    display: flex;
+    justify-content: space-between;
+}
+.content li {
+    width: 304px;
+    height: 404px;
+    background-color: #eef9f4;
+    cursor: pointer;
+}
+.content li .pic {
+    width: 100%;
+    height: 304px;
+}
+.content li .info {
+    margin-top: 18px;
+    text-align: center;
+}
+.content li .info h4 {
+    font-size: 20px;
+    font-style: none;
+    font-weight: 400;
+}
+.goods .content li .info p {
+    margin-top: 8px;
+    font-size: 18px;
+    color: #AA2113;
+}
+.goods .content li .info span {
+    font-size: 22px;
+    margin-left: 3px;
+}
+.hot .content li .info p {
+    color: #A1A1A1;
+    font-size: 18px;
+}
+/* 品牌推荐 */
+.brandids {
+    height: 468px;
+    background-color: #f5f5f5;
+    margin-top: 60px;
+}
+.brandids .wrapper {
+    height: 100%;
+    /* 解决外边距塌陷问题 */
+    overflow: hidden;
+}
+.brandids .title {
+    margin-bottom: 40px;
+    position: relative;
+}
+.brandids .button {
+    position: absolute;
+    height: 20px;
+    bottom: -25px;
+    right: 0px;
+    display: flex;
+}
+.brandids .button a {
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+}
+.brandids .button a:first-child {
+    margin-right: 12px;
+}
+.brandids .button .prev {
+    background-color: #ddd;
+    cursor: not-allowed;
+
+}
+.brandids .button .next {
+    background-color: #00be9a;
+    cursor: pointer;
+}
+.brandids .iconfont{
+    color: white;
+    padding-bottom: 2px;
+    padding-top: 2px;
+}
+.brandids .content li{
+    width: 244px;
+    height: 306px;
+}
+.brandids .content li img {
+    width: 244px;
+    height: 306px;
+}

@@ -1,0 +1,207 @@
+.wrapper {
+    margin: 0px auto;
+    width: 1240px;
+}
+/* 快捷导航 */
+.shortcut {
+    height: 52px;
+    background-color: #333;
+}
+.shortcut .wrapper {
+    height: 52px;
+    display: flex;
+    justify-content: flex-end;
+}
+.shortcut .wrapper ul {
+    display: flex;
+    line-height: 52px;
+}
+.shortcut .wrapper ul a {
+    border-right: 1px solid #999;
+    padding: 0px 15px;
+    color: white;
+    font-size: 14px;
+}
+.shortcut .wrapper ul li:last-child a {
+    border-right: 0px;
+}
+.icon-shoujitubiao {
+    color: white;
+    margin-right: 4px;
+    /* vertical-align: middle; */
+}
+.shortcut .wrapper ul li .login{
+    color: #5eb69c;
+}
+/* header */
+.header {
+    height: 88px;
+    margin-top: 22px;
+    margin-bottom: 22px;
+    display: flex;
+}
+.logo {
+    width: 200px;
+    height: 88px;
+    margin-right: 40px;
+}
+.logo h1 {
+    display: block;
+}
+.logo a img{
+    width: 200px;
+    height: 88px;
+}
+/* 导航 */
+.navi {
+    margin-top: 33px;
+    margin-right: 28px;
+}
+.navi ul {
+    display: flex;
+}
+.navi li {
+    margin-right: 47px;
+}
+.navi li a {
+    padding-bottom: 10px;
+}
+.navi li a:hover {
+    border-bottom: 2px solid #5eb69c;
+    color: #5eb69c;
+}
+/* 搜索区域 */
+.search {
+    width: 170px;
+    height: 34px;
+    border-bottom: 2px solid #f4f4f4;
+    margin-top: 33px;
+    margin-right: 44px;
+    display: flex;
+}
+.search .icon-fangdajing {
+    font-size: 18px;
+    color: #ccc;
+    margin-right: 8px;
+}
+.search input {
+    /* 重置input默认宽度 。浏览器优先生效input的默认宽度，所以flex：1不生效*/
+    width: 0px;
+    flex: 1; 
+    border: none;  
+}
+.search input::placeholder {
+    font-size: 16px;
+    color: #ccc;
+}
+/* 购物车 */
+.shopcar {
+    margin-top: 32px;
+    position: relative;
+}
+.shopcar .icon-gouwuche{
+    font-size: 24px;
+}
+.shopcar .shopcar_num {
+    position: absolute;
+    top: -2px;
+    left: 12px;
+    height: 15px;
+    padding: 0px 6px;
+    border-radius: 7.5px;
+    background-color: #e26237;
+    color: #fefefe;
+    font-size: 14px;
+    line-height: 15px;
+}
+/* footer */
+.footer {
+    background-color: #f5f5f5;
+    height: 581px;
+}
+.service {
+    height: 178px;
+    border-bottom: 1px solid #e8e8e8;
+    padding: 60px 0px;
+}
+.service ul {
+    display: flex;
+    justify-content: space-around;
+}
+.service li {
+    width: 190px;
+    height: 58px;
+    line-height: 58px;
+    display: flex;
+}
+.service h2 {
+    width: 58px;
+    height: 58px;
+    /* background-color: aqua; */
+    background-image: url("../images/asset-icons.png");
+    background-position: 0 -192px;
+    margin-right: 20px;
+}
+.service ul li:nth-child(2) h2 {
+    background-position: -42px -192px;
+}
+.service ul li:nth-child(3) h2 {
+    background-position: -84px -192px;
+}
+.service ul li:nth-child(4) h2 {
+    background-position: -126px -192px;
+}
+.service p {
+    font-size: 28px;
+}
+.footer .wrapper .help {
+    height: 300px;
+}
+.footer .help {
+    display: flex;
+    padding-top: 60px;
+    justify-content: space-between;
+}
+.help .left {
+    display: flex;
+}
+.help .left dl {
+    margin-right: 84px;
+}
+.help .left dl:last-child {
+    margin-right: 0px;
+}
+.help .left dl dt {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+.help .left dl dd a{
+    color: #969696;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+.icon-kefu {
+    font-size: 16px;
+    color: #5eb69c;
+}
+.help .right ul{
+    display: flex;
+    justify-content: space-between;
+}
+.help .right li:first-child {
+    margin-right: 55px;
+}
+.help .right li .pic{
+    width: 120px;
+    height: 120px;
+    margin-bottom: 10px;
+}
+.help .right li img {
+    width: 120px;
+    height: 120px;
+}
+.help .right li p {
+    text-align: center;
+    font-size: 14px;
+    color: #969696;
+}
