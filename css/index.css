@@ -100,7 +100,6 @@
 .title .right .more{
     color: #A1A1A1;
     font-size: 16px;
-    line-height: 42px;
 }
 .icon-xiangyoujiantou {
     color: #A1A1A1;
@@ -193,4 +192,135 @@
 .brandids .content li img {
     width: 244px;
     height: 306px;
+}
+/* 生鲜 */
+.fresh .title {
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+.title .right {
+    display: flex;
+}
+.title .right ul {
+    display: flex;
+    margin-right: 58px;
+}
+.title .right ul a{
+    display: block;
+    font-size: 16px;
+    padding-left: 12px;
+    padding-right: 12px;
+    border-radius: 4px;
+    margin-right: 6px;
+    height: 20px;
+    line-height: 20px;
+}
+.title .right ul a:last-child {
+    margin-right: 0px;
+}
+.title .right ul li .choosed {
+    background-color: #00be9a;
+    color: white;
+}
+.bd {
+    display: flex;
+    justify-content: space-between;
+}
+.bd .left {
+    width: 248px;
+    height: 610px;
+}
+.bd .right {
+    width: 968px;
+    height: 610px;
+}
+.bd .left img {
+    display: block;
+    width: 248px;
+    height: 610px;
+}
+.bd .right ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+.bd .right li {
+    position: relative;
+    /* 隐藏cover */
+    overflow: hidden;
+    width: 242px;
+    height: 305px;
+}
+.bd .right .item {
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 100%;
+}
+.bd .right .pic img{
+    width: 200px;
+    height: 160px;
+    text-align: center;
+}
+.bd .right .text .info{
+    height: 85px;
+}
+.bd .right .text .info h3 {
+    margin-top: 6px;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+}
+.bd .right .text .info p {
+    margin-top: 6px;
+    font-size: 16px;
+    color: #666;
+    line-height: 19px;
+}
+.bd .right .text p {
+    font-size: 16px;
+    color: #AA2113;
+}
+.bd .right .text span {
+    margin-left: 3px;
+    color: #AA2113;
+    font-size: 22px;
+}
+/* 找相似 */
+.bd .right .cover {
+    width: 242px;
+    height: 84px;
+    background-color: #00be9a;
+    position: absolute;
+    bottom: -86px;
+    right: 0;
+    text-align: center;
+    padding-top: 15px;
+    color: white;
+    /* 动画，谁变化加谁身上 */
+    transition: all 0.5s;
+}
+.bd .right .cover p:first-child {
+    font-size: 18px;
+    font-weight: 400;
+}
+.bd .right .cover p:nth-child(2) {
+    margin: 3px auto 6px;
+    margin-top: 5px;
+    width: 120px;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.11);
+}
+.bd .right .cover p:nth-child(3){
+    font-size: 13px;
+}
+.bd .right .icon-xiangyoujiantou {
+    color: white;
+    font-size: 13px;
+}
+/* cover 动画 */
+.bd .right li:hover .cover{
+    bottom: 0;
+}
+.bd .right li:hover {
+    border: 2px solid #00be9a;
 }
