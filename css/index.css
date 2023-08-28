@@ -324,3 +324,94 @@
 .bd .right li:hover {
     border: 2px solid #00be9a;
 }
+/* 最新专题 */
+.newtopic .title {
+    margin-top: 100px;
+}
+.newtopic {
+    margin-bottom: 40px;
+}
+.newtopic .topic ul {
+    display: flex;
+    justify-content: space-between;
+}
+.newtopic .topic li {
+    width: 405px;
+    height: 355px;
+    border-radius: 4px;
+}
+.newtopic .topic li:hover {
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.5);
+}
+.newtopic .topic .pic img{
+    width: 405px;
+    height: 288px;
+}
+.newtopic .topic .pic {
+    position: relative;
+}
+.newtopic .topic .pic .goodInfo {
+    position: absolute;
+    height: 90px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    left: 0;
+    bottom: 0;
+    background-image: linear-gradient(180deg, rgba(0,0,0,0) 0%,rgba(0,0,0,0.9) 100%);
+    align-items: center;
+    padding: 0px 15px;
+}
+.newtopic .topic .pic .goodInfo .left {
+    overflow: hidden;
+}
+.newtopic .topic .pic .goodInfo .left p:first-child{
+    color: #fff;
+    font-size: 20px;
+    display: block;
+    max-width: 270px;
+    text-overflow: clip;
+    max-height: 30px;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+}
+.newtopic .topic .pic .goodInfo .left p:last-child {
+    text-overflow: ellipsis;
+    display: block;
+    font-size: 16px;
+    color: #999;
+    margin-top: 6px;
+    height: 20px;
+    max-width: 270px;
+}
+.newtopic .topic .pic .goodInfo .right p {
+    line-height: 25px;
+    padding: 0px 7px;
+    color: #cf4444;
+    font-size: 17px;
+    background-color: #fff;
+    border-radius: 2px;
+    height: 25px;
+}
+.newtopic .topic .txt {
+    width: 405px;
+    height: 67px;
+    display: flex;
+    padding: 0px 15px;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    color: #666;
+}
+.newtopic .topic .txt .iconfont {
+    margin-right: 5px;
+}
+.newtopic .topic .txt .icon-jushoucanggift {
+    color: #AA2113;
+}
+.newtopic .topic .txt .left {
+    display: flex;
+}
+.newtopic .topic .txt .left p:first-child {
+    margin-right: 20px;
+}
