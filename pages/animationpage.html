@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>动画</title>
+    <style>
+        .box {
+            margin: 0 auto;
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+            opacity: 0.5;
+            /*animation: animationOne 1s infinite;*/
+            /* animation是复合属性：动画名称 动画时长 速度曲线 延迟时间  重复次数 动画方向 动画完成时状态*/
+            animation: animation2 1s;
+        }
+        /* 动画一 宽度从200到800*/
+         @keyframes animationOne {
+            from {
+                width: 200px;
+            }
+            to {
+                width: 800px;
+                opacity: 1;
+            }
+         }
+         /* 动画二，从200*200到 200 * 500 再到 500*800 。 百分比是动画时长的比例*/
+
+         @keyframes animation2 {
+           0% {
+            width: 100px;
+            width: 200px;
+           } 
+           70% {
+            width: 200px;
+            height: 500px;
+           }
+           100% {
+            width: 500px;
+            height: 800px;
+           }
+         }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+
+    </div>
+</body>
+</html>
